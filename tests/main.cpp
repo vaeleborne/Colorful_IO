@@ -2,7 +2,7 @@
 #include <iostream>
 void Pause()
 {
-    std::cout << "\nPress Any Key To Continue...\n";
+    std::cout << "\nPress The Enter Key To Continue...\n";
     std::cin.get();
 }
 
