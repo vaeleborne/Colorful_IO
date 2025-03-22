@@ -4,7 +4,7 @@ Colorful_IO is a custom C++ library (built as a DLL) that provides a clean and f
 
 ✅ Built as a dynamic library (DLL) with clean headers and source separation — not header-only!
 
-#✨ Features
+##✨ Features
 
 🌈 Colorful Output
 
