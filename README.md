@@ -1,4 +1,5 @@
-🎨 Colorful_IO
+---
+## 🎨 Colorful_IO
 
 Colorful_IO is a custom C++ library (built as a DLL) that provides a clean and flexible way to enhance terminal-based applications with colorful, styled output and interactive utilities — perfect for making console tools more engaging and readable.
 
@@ -7,7 +8,7 @@ Colorful_IO is a custom C++ library (built as a DLL) that provides a clean and f
 ## ✨ Features
 
 🌈 Colorful Output
----
+
 Style your terminal output using ANSI escape codes
 Functions return std::string so you can use any std::ostream (e.g., std::cout, std::ostringstream, file streams, etc.)
 Works best in ANSI-compatible environments (Linux/macOS terminals, modern Windows terminals)
@@ -28,12 +29,14 @@ Designed with flexibility in mind — pass in your own streams and styles.
 Just include the header and link the DLL
 Easy to integrate into any C++ project
 
-#📦 Installation / Setup
+---
+## 📦 Installation / Setup
 Build the DLL (CMakeLists are included!)
 Include the headers in your project
 Link against the DLL import library
+---
 
-#🚀 Basic Usage
+## 🚀 Basic Usage
 
  ```cpp
 #include <Colorful_IO.hpp>
@@ -68,7 +71,7 @@ int main()
 
 ```
 
-
-#🔐 License
+---
+## 🔐 License
 MIT License
 
