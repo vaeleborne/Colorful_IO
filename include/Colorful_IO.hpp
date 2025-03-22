@@ -1,5 +1,5 @@
 #ifndef COLORFUL_IO_HPP
-#define COLORUL_IO_HPP
+#define COLORFUL_IO_HPP
 #include <iostream>
 #include <string>
 #include <vector>
