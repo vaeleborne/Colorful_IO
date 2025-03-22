@@ -302,6 +302,7 @@ TEST(InputTests, AskYesNo_ReturnsFalseWhenInputIsN)
 {
 	std::istringstream mockInput("n");
 	std::stringstream out;
+
 	EXPECT_FALSE(io::AskYesNo(mockInput, out, "Unit Test Answers n", false));
 
 	mockInput.str("N");

@@ -183,8 +183,6 @@ namespace ColorfulIO
 	/// Number of Milliseconds
 	/// </param>
 	void PauseForMilliseconds(int ms);
-
-    void printColored(const std::string& str){std::cout << "TESTING: " << str;}
 }
 
 #endif

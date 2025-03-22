@@ -18,5 +18,15 @@ target_include_directories(Colorful_IO PRIVATE ${CMAKE_SOURCE_DIR}/include)
 add_executable(UnitTests main.cpp colorful_io_ut.cpp)
 target_link_libraries(UnitTests PRIVATE Colorful_IO gtest_main)
 
+
+
 #Register Tests
 add_test(NAME UnitTests COMMAND UnitTests)
+
+
+# Post-build step to copy the DLL into the same folder as the test binary
+add_custom_command(TARGET UnitTests POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+        $<TARGET_FILE:Colorful_IO>                         # Full path to built DLL
+        $<TARGET_FILE_DIR:UnitTests>                       # Destination dir (same as UnitTests binary)
+)
